@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -20,8 +20,45 @@ function HomeScreen() {
             <View style={{width:'50%'}}></View>
           </View>
 
+          <View style={styles.box}>
+            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
+              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
+              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
+              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
+            </View>
+            <View style={{width:'50%'}}></View>
+          </View>
+
+          <View style={styles.box}>
+            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
+              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
+              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
+              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
+            </View>
+            <View style={{width:'50%'}}></View>
+          </View>
+
+          <View style={styles.box}>
+            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
+              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
+              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
+              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
+            </View>
+            <View style={{width:'50%'}}></View>
+          </View>
+
+          <View style={styles.box}>
+            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
+              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
+              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
+              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
+            </View>
+            <View style={{width:'50%'}}></View>
+          </View>
+
         </View>
       </ScrollView>
+
     </View>
   );
 }
@@ -54,6 +91,7 @@ const styles = StyleSheet.create({
     height:180,
     width:'88%',
     flexDirection: 'row',
-    
+    marginBottom:20
   },
+
 });
