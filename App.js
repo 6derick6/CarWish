@@ -22,36 +22,9 @@ function HomeScreen() {
 
           <View style={styles.box}>
             <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
-              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
-              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
-              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
-            </View>
-            <View style={{width:'50%'}}></View>
-          </View>
-
-          <View style={styles.box}>
-            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
-              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
-              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
-              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
-            </View>
-            <View style={{width:'50%'}}></View>
-          </View>
-
-          <View style={styles.box}>
-            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
-              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
-              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
-              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
-            </View>
-            <View style={{width:'50%'}}></View>
-          </View>
-
-          <View style={styles.box}>
-            <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
-              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>AUDI</Text>
-              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>RS 3 Coupé</Text>
-              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 342.000,00</Text>
+              <Text style={{fontWeight:500, fontSize:14, color:'#AEAEB3',paddingTop:34}}>PORSHE</Text>
+              <Text style={{fontWeight:500, fontSize:20, color:'#47474D'}}>911 TURBO S</Text>
+              <Text style={{fontWeight:500, fontSize:18, color:'#DC1637',paddingTop:26}}>R$ 750.000,00</Text>
             </View>
             <View style={{width:'50%'}}></View>
           </View>
