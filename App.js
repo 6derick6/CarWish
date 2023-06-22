@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'rea
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-function HomeScreen() {
+function HomeScreen({navigation}) {
   return (
     <View style={{flex:1}}>
       <ScrollView style={styles.container}>
@@ -12,7 +12,10 @@ function HomeScreen() {
         <View style={{width: '100%',height: '100%', alignItems:'center', paddingTop:20}}>
             
 
-          <TouchableOpacity style={styles.box}>
+          <TouchableOpacity style={styles.box} onPress={()=>navigation.navigate('About',
+          {marca:'BMW',carro:'M3 Competition',combustivel:'Gasolina',valor:'R$ 799.950,00',velocidade:'290 km/h',tempo:'3.9s',potencia:'510cv',
+          img1:'./images/m3_motorista.png',img2:'m3_frente',img1:'m3_passageiro',img1:'m3_traseira',transmissao:'Automática',lugares:'5 pessoas',
+          sobre:'O M3 Competition 2023 é uma versão esportiva da Série 3 da BMW, sendo um sedan esportivo, que traz um visual agressivo e muito bonito, além de tudo ele conta com um desempenho fenomenal digno de um carro esportivo.'})}>
             <View style={{width:'50%',alignItems:'flex-start',paddingLeft:32}}>
               <Text style={{fontWeight:500, fontSize:11, color:'#AEAEB3',paddingTop:26}}>BMW</Text>
               <Text style={{fontWeight:500, fontSize:17, color:'#47474D'}}>M3 Competition</Text>
@@ -51,6 +54,19 @@ function HomeScreen() {
   );
 }
 
+
+function SobreScreen({route,navigation}) {
+  return (
+    <View style={{flex:1}}>
+      <ScrollView horizontal style={{flex:1}}>
+      <Image resizeMode='contain' style={styles.imgCarro} source={require('./images/m3_motorista.png')}/>
+      </ScrollView>
+
+      </View>
+  );
+}
+
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -60,6 +76,7 @@ function App() {
         headerTintColor: 'white',
         headerStyle: {backgroundColor: '#1B1B1F'}}}>
         <Stack.Screen name="CarWish" component={HomeScreen} />
+        <Stack.Screen name="About" component={SobreScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
